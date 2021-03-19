@@ -1,0 +1,13 @@
+person:
+  name: zhangsan
+  age: 3
+  happy: false
+  birth: 2021/3/19
+  maps: {k1: v1,k2: v2}
+  list:
+    - code
+    - music
+    - girl
+  dog:
+    name: 喵喵酱
+    age: 3
