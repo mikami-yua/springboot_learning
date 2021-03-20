@@ -12,3 +12,5 @@ Thymeleaf
     只要需要使用Thymeleaf，只需要导入对应的依赖即可。将html页面放在templates目录下即可
 
     基本语法
+
+springboot中由非常多的@Configuration配置类，帮助我们进行扩展配置。
