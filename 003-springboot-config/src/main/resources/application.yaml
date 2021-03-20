@@ -9,5 +9,42 @@ person:
     - music
     - girl
   dog:
-    name: 喵喵酱
+    name: ${person.hello:hello}_旺财
     age: 3
+spring:
+  profiles:
+    active: lisi
+
+--- #多文档分割
+person:
+  name: 李四
+  age: 13
+  happy: false
+  birth: 2021/3/20
+  maps: {k1: v1,k2: v2}
+  list:
+    - code
+    - music
+    - girl
+  dog:
+    name: ${person.hello:hello}_旺财
+    age: 3
+spring:
+  profiles: lisi
+
+--- #多文档分割
+person:
+  name: 王五
+  age: 23
+  happy: false
+  birth: 2021/3/20
+  maps: {k1: v1,k2: v2}
+  list:
+    - code
+    - music
+    - girl
+  dog:
+    name: ${person.hello:hello}_旺财
+    age: 3
+spring:
+  profiles: wangwu

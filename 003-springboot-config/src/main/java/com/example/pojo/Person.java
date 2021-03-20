@@ -1,7 +1,10 @@
 package com.example.pojo;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.Date;
 import java.util.List;
@@ -9,7 +12,12 @@ import java.util.Map;
 
 @Component
 @ConfigurationProperties(prefix = "person")
+@Validated //数据校验
+//@PropertySource(value = "classpath:duozijie.properties")//加载指定配置文件
 public class Person {
+    //使用SPEL表达式取出配置文件的值
+    //@Value("${name}")
+
     private String name;
     private Integer age;
     private Boolean happy;
